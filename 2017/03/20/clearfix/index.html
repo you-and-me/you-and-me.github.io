@@ -87,9 +87,7 @@
 
 
 
-<meta name="description" content="css清除浮动之clearfix###1、清除浮动方法总结###
-###2、clearfix###
-2.1 首先我们看一下clearfix代码：
+<meta name="description" content="css清除浮动之clearfix1、清除浮动方法总结2、clearfix2.1 首先我们看一下clearfix代码：
  .clearfix:after {
     content: &amp;quot;&amp;quot;;
     display: block;
@@ -98,14 +96,13 @@
 }
 .clearfix {
     zoom: 1;
-}">
+}
+1）在IE67下，zoom:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="article title">
 <meta property="og:url" content="http://yoursite.com/2017/03/20/clearfix/index.html">
 <meta property="og:site_name" content="Hexo个人博客">
-<meta property="og:description" content="css清除浮动之clearfix###1、清除浮动方法总结###
-###2、clearfix###
-2.1 首先我们看一下clearfix代码：
+<meta property="og:description" content="css清除浮动之clearfix1、清除浮动方法总结2、clearfix2.1 首先我们看一下clearfix代码：
  .clearfix:after {
     content: &amp;quot;&amp;quot;;
     display: block;
@@ -114,13 +111,12 @@
 }
 .clearfix {
     zoom: 1;
-}">
-<meta property="og:updated_time" content="2017-03-21T08:49:39.703Z">
+}
+1）在IE67下，zoom:">
+<meta property="og:updated_time" content="2017-03-21T09:06:26.220Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="article title">
-<meta name="twitter:description" content="css清除浮动之clearfix###1、清除浮动方法总结###
-###2、clearfix###
-2.1 首先我们看一下clearfix代码：
+<meta name="twitter:description" content="css清除浮动之clearfix1、清除浮动方法总结2、clearfix2.1 首先我们看一下clearfix代码：
  .clearfix:after {
     content: &amp;quot;&amp;quot;;
     display: block;
@@ -129,7 +125,8 @@
 }
 .clearfix {
     zoom: 1;
-}">
+}
+1）在IE67下，zoom:">
 
 
 
@@ -354,9 +351,7 @@
       
 
       
-        <h1 id="css清除浮动之clearfix"><a href="#css清除浮动之clearfix" class="headerlink" title="css清除浮动之clearfix"></a>css清除浮动之clearfix</h1><p>###1、清除浮动方法总结###</p>
-<p>###2、clearfix###</p>
-<p><strong>2.1 首先我们看一下clearfix代码：</strong></p>
+        <h1 id="css清除浮动之clearfix"><a href="#css清除浮动之clearfix" class="headerlink" title="css清除浮动之clearfix"></a>css清除浮动之clearfix</h1><h3 id="1、清除浮动方法总结"><a href="#1、清除浮动方法总结" class="headerlink" title="1、清除浮动方法总结"></a>1、清除浮动方法总结</h3><h3 id="2、clearfix"><a href="#2、clearfix" class="headerlink" title="2、clearfix"></a>2、clearfix</h3><p><strong>2.1 首先我们看一下clearfix代码：</strong></p>
 <pre><code> .clearfix:after {
     content: &quot;&quot;;
     display: block;
@@ -366,7 +361,9 @@
 .clearfix {
     zoom: 1;
 }
-</code></pre><p>1. </p>
+</code></pre><p>1）在IE67下，zoom: 1通过触发hasLayout使元素闭合内部的浮动。</p>
+<p>2）在标准浏览器下，会在应用了类clearfix的元素后面插入一个clear: both的块级元素，达到清除浮动的作用。</p>
+<h1 id="页面优化"><a href="#页面优化" class="headerlink" title="页面优化"></a>页面优化</h1><p><a href="http://www.diybloghome.com/frontlogy/1036.html" title="10中优化页面加载速度的方法" target="_blank" rel="external">http://www.diybloghome.com/frontlogy/1036.html</a></p>
 
       
     </div>
@@ -522,7 +519,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#css清除浮动之clearfix"><span class="nav-number">1.</span> <span class="nav-text">css清除浮动之clearfix</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#css清除浮动之clearfix"><span class="nav-number">1.</span> <span class="nav-text">css清除浮动之clearfix</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、清除浮动方法总结"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、清除浮动方法总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、clearfix"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、clearfix</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#页面优化"><span class="nav-number">2.</span> <span class="nav-text">页面优化</span></a></li></ol></div>
             
 
           </div>

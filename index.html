@@ -324,9 +324,7 @@
       
         
           
-            <h1 id="css清除浮动之clearfix"><a href="#css清除浮动之clearfix" class="headerlink" title="css清除浮动之clearfix"></a>css清除浮动之clearfix</h1><p>###1、清除浮动方法总结###</p>
-<p>###2、clearfix###</p>
-<p><strong>2.1 首先我们看一下clearfix代码：</strong></p>
+            <h1 id="css清除浮动之clearfix"><a href="#css清除浮动之clearfix" class="headerlink" title="css清除浮动之clearfix"></a>css清除浮动之clearfix</h1><h3 id="1、清除浮动方法总结"><a href="#1、清除浮动方法总结" class="headerlink" title="1、清除浮动方法总结"></a>1、清除浮动方法总结</h3><h3 id="2、clearfix"><a href="#2、clearfix" class="headerlink" title="2、clearfix"></a>2、clearfix</h3><p><strong>2.1 首先我们看一下clearfix代码：</strong></p>
 <pre><code> .clearfix:after {
     content: &quot;&quot;;
     display: block;
@@ -336,7 +334,9 @@
 .clearfix {
     zoom: 1;
 }
-</code></pre><p>1. </p>
+</code></pre><p>1）在IE67下，zoom: 1通过触发hasLayout使元素闭合内部的浮动。</p>
+<p>2）在标准浏览器下，会在应用了类clearfix的元素后面插入一个clear: both的块级元素，达到清除浮动的作用。</p>
+<h1 id="页面优化"><a href="#页面优化" class="headerlink" title="页面优化"></a>页面优化</h1><p><a href="http://www.diybloghome.com/frontlogy/1036.html" title="10中优化页面加载速度的方法" target="_blank" rel="external">http://www.diybloghome.com/frontlogy/1036.html</a></p>
 
           
         
