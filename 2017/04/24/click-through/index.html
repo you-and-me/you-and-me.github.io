@@ -87,22 +87,25 @@
 
 
 
-<meta name="description" content="页面载入时间，小于2s的是优良的，2s-4s是可接受的，但大于5s会严重影响用户体验，因为当页面加载时间过长时，用户很可能离开你的页面。所以，页面加载速度是页面制作时的一项重要考虑因素。 
-下面总结一些优化方法1、优化图像和文件格式确保图像尽可能小，并且，选用格式时，一般选用JPEG格式，有Alpha因子或透明的或要求分辨率高的选用PNG，动画选用GIF。
-2、顶部css样式，底部js文件顶部cs">
+<meta name="description" content="导语：
+在做移动端项目时，多次遇到了这种情况：点击蒙层，蒙层下的对象也触发了click事件。在此提出产生的原因和解决方案，希望对大家有帮助！
+
+一、产生点透的原因移动事件提供了touchstart、touchmove和touchend，反应速度都比click快，因为click事件有300ms的延迟，用来等待一段时间判断是不是双击。所以，touch事件响应结束后，还可能响应click事件，产生点透。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="优化页面加载速度">
-<meta property="og:url" content="http://yoursite.com/2017/03/22/pageQuickDownload/index.html">
+<meta property="og:title" content="移动页面点击穿透">
+<meta property="og:url" content="http://yoursite.com/2017/04/24/click-through/index.html">
 <meta property="og:site_name" content="Hexo个人博客">
-<meta property="og:description" content="页面载入时间，小于2s的是优良的，2s-4s是可接受的，但大于5s会严重影响用户体验，因为当页面加载时间过长时，用户很可能离开你的页面。所以，页面加载速度是页面制作时的一项重要考虑因素。 
-下面总结一些优化方法1、优化图像和文件格式确保图像尽可能小，并且，选用格式时，一般选用JPEG格式，有Alpha因子或透明的或要求分辨率高的选用PNG，动画选用GIF。
-2、顶部css样式，底部js文件顶部cs">
-<meta property="og:updated_time" content="2017-04-24T08:30:14.717Z">
+<meta property="og:description" content="导语：
+在做移动端项目时，多次遇到了这种情况：点击蒙层，蒙层下的对象也触发了click事件。在此提出产生的原因和解决方案，希望对大家有帮助！
+
+一、产生点透的原因移动事件提供了touchstart、touchmove和touchend，反应速度都比click快，因为click事件有300ms的延迟，用来等待一段时间判断是不是双击。所以，touch事件响应结束后，还可能响应click事件，产生点透。">
+<meta property="og:updated_time" content="2017-04-24T08:30:12.487Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="优化页面加载速度">
-<meta name="twitter:description" content="页面载入时间，小于2s的是优良的，2s-4s是可接受的，但大于5s会严重影响用户体验，因为当页面加载时间过长时，用户很可能离开你的页面。所以，页面加载速度是页面制作时的一项重要考虑因素。 
-下面总结一些优化方法1、优化图像和文件格式确保图像尽可能小，并且，选用格式时，一般选用JPEG格式，有Alpha因子或透明的或要求分辨率高的选用PNG，动画选用GIF。
-2、顶部css样式，底部js文件顶部cs">
+<meta name="twitter:title" content="移动页面点击穿透">
+<meta name="twitter:description" content="导语：
+在做移动端项目时，多次遇到了这种情况：点击蒙层，蒙层下的对象也触发了click事件。在此提出产生的原因和解决方案，希望对大家有帮助！
+
+一、产生点透的原因移动事件提供了touchstart、touchmove和touchend，反应速度都比click快，因为click事件有300ms的延迟，用来等待一段时间判断是不是双击。所以，touch事件响应结束后，还可能响应click事件，产生点透。">
 
 
 
@@ -130,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/22/pageQuickDownload/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/24/click-through/"/>
 
 
 
 
 
-  <title> 优化页面加载速度 | Hexo个人博客 </title>
+  <title> 移动页面点击穿透 | Hexo个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -255,7 +258,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/22/pageQuickDownload/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/24/click-through/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jing's Blog">
@@ -276,7 +279,7 @@
             
             
               
-                优化页面加载速度
+                移动页面点击穿透
               
             
           </h1>
@@ -291,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-22T10:10:41+08:00">
-                2017-03-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-24T16:28:41+08:00">
+                2017-04-24
               </time>
             
 
@@ -327,20 +330,20 @@
       
 
       
-        <p>页面载入时间，小于2s的是优良的，2s-4s是可接受的，但大于5s会严重影响用户体验，因为当页面加载时间过长时，用户很可能离开你的页面。所以，页面加载速度是页面制作时的一项重要考虑因素。 </p>
-<h2 id="下面总结一些优化方法"><a href="#下面总结一些优化方法" class="headerlink" title="下面总结一些优化方法"></a>下面总结一些优化方法</h2><h2 id="1、优化图像和文件格式"><a href="#1、优化图像和文件格式" class="headerlink" title="1、优化图像和文件格式"></a>1、优化图像和文件格式</h2><p>确保图像尽可能小，并且，选用格式时，一般选用JPEG格式，有Alpha因子或透明的或要求分辨率高的选用PNG，动画选用GIF。</p>
-<h2 id="2、顶部css样式，底部js文件"><a href="#2、顶部css样式，底部js文件" class="headerlink" title="2、顶部css样式，底部js文件"></a>2、顶部css样式，底部js文件</h2><p>顶部css样式可以使网页渐进式呈现；<br>js文件加载时会阻止其他代码加载，当放在底部时可以避免代码的等待，提高加载速度。</p>
-<h2 id="3、优化HTML、css、js文件"><a href="#3、优化HTML、css、js文件" class="headerlink" title="3、优化HTML、css、js文件"></a>3、优化HTML、css、js文件</h2><p>删除不必要的注释和空格，从而减小文件大小。</p>
-<h2 id="4、文件分离"><a href="#4、文件分离" class="headerlink" title="4、文件分离"></a>4、文件分离</h2><p>不使用内联css，因为内联css会增加网页大小，增加大量维护工作；<br>文件可以分为css、js和图像，这样可以提高服务器的稳定性。</p>
-<h2 id="5、gzip压缩"><a href="#5、gzip压缩" class="headerlink" title="5、gzip压缩"></a>5、gzip压缩</h2><p>压缩文件大小，类似第3点，不过压缩让文件变得更小。</p>
-<h2 id="6、去掉不必要插件"><a href="#6、去掉不必要插件" class="headerlink" title="6、去掉不必要插件"></a>6、去掉不必要插件</h2><p>每个插件都需要服务器处理，从而增加页面加载时间。</p>
-<h2 id="7、减少DNS查询"><a href="#7、减少DNS查询" class="headerlink" title="7、减少DNS查询"></a>7、减少DNS查询</h2><p>DNS会花费很长时间来返回一个主机名的IP地址，而浏览器在查询结束前不会进行任何操作，减少不同域名的数量可以减少DNS查询，加快页面加载速度。</p>
-<h2 id="8、尽量减少http请求"><a href="#8、尽量减少http请求" class="headerlink" title="8、尽量减少http请求"></a>8、尽量减少http请求</h2><p>减少网站上的对象数量；<br>最小化网站上的重定向数量；<br>使用CSS Sprites技术（只要你需要的那部分图片内容）；<br>结合JavaScripts和CSS。</p>
-<h2 id="9、异步脚本"><a href="#9、异步脚本" class="headerlink" title="9、异步脚本"></a>9、异步脚本</h2><p>在异步模式中，脚本是在后台下载的（因为下载脚本会拖慢网速，所以我们会将第三方脚本作为异步脚本），页面不需要脚本加载完后就呈现出来。</p>
-<h2 id="10、使用内容分发网络（CDN）"><a href="#10、使用内容分发网络（CDN）" class="headerlink" title="10、使用内容分发网络（CDN）"></a>10、使用内容分发网络（CDN）</h2><p>CDN是位于不同地理位置的服务器组成的网络，每个服务器都拥有所有网站的文件副本。当访问者请求文件和网页时，就可以从就近的网站服务器或负载最小的服务器发送过来。</p>
-<h2 id="11、利用浏览器缓存"><a href="#11、利用浏览器缓存" class="headerlink" title="11、利用浏览器缓存"></a>11、利用浏览器缓存</h2><p>允许浏览器缓存你的网页副本，优化缓存系统。</p>
-<h2 id="12、启用Keep-Alive"><a href="#12、启用Keep-Alive" class="headerlink" title="12、启用Keep Alive"></a>12、启用Keep Alive</h2><p>Keep-Alive功能使客户端到服务器端的连接持续有效，当出现对服务器的后继请求时，Keep-Alive功能避免了建立或者重新建立连接，如果“Keep Alive”选项被禁止，那么下载网站的进程通常就会增加，从而拖累了网站速度；<br>启用KeepAlive，它可以减少CPU的使用。</p>
-<p><a href="http://www.cnblogs.com/rysly/p/optimize_code.html" target="_blank" rel="external">阅读原文</a></p>
+        <h4 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h4><blockquote>
+<p>在做移动端项目时，多次遇到了这种情况：点击蒙层，蒙层下的对象也触发了click事件。在此提出产生的原因和解决方案，希望对大家有帮助！</p>
+</blockquote>
+<h2 id="一、产生点透的原因"><a href="#一、产生点透的原因" class="headerlink" title="一、产生点透的原因"></a>一、产生点透的原因</h2><p>移动事件提供了touchstart、touchmove和touchend，反应速度都比click快，因为click事件有300ms的延迟，用来等待一段时间判断是不是双击。所以，touch事件响应结束后，还可能响应click事件，产生点透。</p>
+<h2 id="二、解决方案"><a href="#二、解决方案" class="headerlink" title="二、解决方案"></a>二、解决方案</h2><p>点击穿透发生的情况我就不列举了，相信大家也遇到过一些，慢慢总结吧。</p>
+<ol>
+<li>只用touch，不用click，这里要注意a标签中href属性是响应click事件，需要修改为js跳转；</li>
+<li>只用click，不过不建议这样做，因为太慢。</li>
+<li>拿东西挡着，例如新建一个空白层将不希望点击到的区域盖住；</li>
+<li>使用<a href="http://www.bootcdn.cn/fastclick/" target="_blank" rel="external">fastclick</a>，引入fastclick库，再把所有touch换成click，目前用的挺好。不过有资料表明这个插件也有bug，在Android4.2的浏览器中会响应两次点击；  </li>
+<li>使用延迟约350ms，结合pointer-events:none，不过这样也会存在问题，当点击上层元素后，下层元素在350ms内点击都无效。     <code>注意：pointer-events:none最好只在一个元素上设置，如果其子元素值为auto，则该元素任然能响应鼠标事件</code></li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>其实，每种方法各有优缺点，就拿方案1说吧，如果页面中的a标签很多，需要链接到多个页面，这样修改起来不免麻烦，所以，选择哪种方案，还需要根据实际情况考虑。</p>
+<p>说了这么多，怎么没说PC端呢，嘿嘿，因为PC不支持touch事件呀！</p>
 
       
     </div>
@@ -383,8 +386,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/20/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/03/22/pageQuickDownload/" rel="next" title="优化页面加载速度">
+                <i class="fa fa-chevron-left"></i> 优化页面加载速度
               </a>
             
           </div>
@@ -392,10 +395,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/24/click-through/" rel="prev" title="移动页面点击穿透">
-                移动页面点击穿透 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -515,7 +514,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下面总结一些优化方法"><span class="nav-number">1.</span> <span class="nav-text">下面总结一些优化方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1、优化图像和文件格式"><span class="nav-number">2.</span> <span class="nav-text">1、优化图像和文件格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、顶部css样式，底部js文件"><span class="nav-number">3.</span> <span class="nav-text">2、顶部css样式，底部js文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、优化HTML、css、js文件"><span class="nav-number">4.</span> <span class="nav-text">3、优化HTML、css、js文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、文件分离"><span class="nav-number">5.</span> <span class="nav-text">4、文件分离</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、gzip压缩"><span class="nav-number">6.</span> <span class="nav-text">5、gzip压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、去掉不必要插件"><span class="nav-number">7.</span> <span class="nav-text">6、去掉不必要插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、减少DNS查询"><span class="nav-number">8.</span> <span class="nav-text">7、减少DNS查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、尽量减少http请求"><span class="nav-number">9.</span> <span class="nav-text">8、尽量减少http请求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9、异步脚本"><span class="nav-number">10.</span> <span class="nav-text">9、异步脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10、使用内容分发网络（CDN）"><span class="nav-number">11.</span> <span class="nav-text">10、使用内容分发网络（CDN）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11、利用浏览器缓存"><span class="nav-number">12.</span> <span class="nav-text">11、利用浏览器缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12、启用Keep-Alive"><span class="nav-number">13.</span> <span class="nav-text">12、启用Keep Alive</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#导语："><span class="nav-number">1.</span> <span class="nav-text">导语：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、产生点透的原因"><span class="nav-number"></span> <span class="nav-text">一、产生点透的原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、解决方案"><span class="nav-number"></span> <span class="nav-text">二、解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number"></span> <span class="nav-text">总结</span></a></div>
             
 
           </div>
