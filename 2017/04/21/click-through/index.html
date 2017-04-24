@@ -87,12 +87,31 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="移动页面点击穿透####导语：
+
+在做移动端项目时，多次遇到了这种情况：点击蒙层，蒙层下的对象也触发了click事件。在此提出产生的原因和解决方案，希望对大家有帮助！
+
+##一、产生点透的原因
+移动事件提供了touchstart、touchmove和touchend，反应速度都比click快，因为click事件有300ms的延迟，用来等待一段时间判断是不是双击。所以，touch事件响应结束后，还可">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/04/21/click-through/index.html">
 <meta property="og:site_name" content="Hexo个人博客">
+<meta property="og:description" content="移动页面点击穿透####导语：
+
+在做移动端项目时，多次遇到了这种情况：点击蒙层，蒙层下的对象也触发了click事件。在此提出产生的原因和解决方案，希望对大家有帮助！
+
+##一、产生点透的原因
+移动事件提供了touchstart、touchmove和touchend，反应速度都比click快，因为click事件有300ms的延迟，用来等待一段时间判断是不是双击。所以，touch事件响应结束后，还可">
+<meta property="og:updated_time" content="2017-04-24T08:18:21.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo个人博客">
+<meta name="twitter:description" content="移动页面点击穿透####导语：
+
+在做移动端项目时，多次遇到了这种情况：点击蒙层，蒙层下的对象也触发了click事件。在此提出产生的原因和解决方案，希望对大家有帮助！
+
+##一、产生点透的原因
+移动事件提供了touchstart、touchmove和touchend，反应速度都比click快，因为click事件有300ms的延迟，用来等待一段时间判断是不是双击。所以，touch事件响应结束后，还可">
 
 
 
@@ -120,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/21/click-through/"/>
 
 
 
 
 
-  <title> 归档 | Hexo个人博客 </title>
+  <title>  | Hexo个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,7 +170,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,140 +254,165 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 3 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/21/click-through/" itemprop="url">
-              
-                <span itemprop="name">未命名</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-21T17:13:29+08:00"
-              content="2017-04-21" >
-          04-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/22/pageQuickDownload/" itemprop="url">
-              
-                <span itemprop="name">优化页面加载速度</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-22T10:10:41+08:00"
-              content="2017-03-22" >
-          03-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/20/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-20T09:54:05+08:00"
-              content="2017-03-20" >
-          03-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/21/click-through/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jing's Blog">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-21T17:13:29+08:00">
+                2017-04-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="移动页面点击穿透"><a href="#移动页面点击穿透" class="headerlink" title="移动页面点击穿透"></a>移动页面点击穿透</h1><p>####导语：</p>
+<blockquote>
+<p>在做移动端项目时，多次遇到了这种情况：点击蒙层，蒙层下的对象也触发了click事件。在此提出产生的原因和解决方案，希望对大家有帮助！</p>
+</blockquote>
+<p>##一、产生点透的原因</p>
+<p>移动事件提供了touchstart、touchmove和touchend，反应速度都比click快，因为click事件有300ms的延迟，用来等待一段时间判断是不是双击。所以，touch事件响应结束后，还可能响应click事件，产生点透。</p>
+<p>##二、解决方案<br>点击穿透发生的情况我就不列举了，相信大家也遇到过一些，慢慢总结吧。</p>
+<ol>
+<li>只用touch，不用click，这里要注意a标签中href属性是响应click事件，需要修改为js跳转；</li>
+<li>只用click，不过不建议这样做，因为太慢。</li>
+<li>拿东西挡着，例如新建一个空白层将不希望点击到的区域盖住；</li>
+<li>使用<a href="http://www.bootcdn.cn/fastclick/" target="_blank" rel="external">fastclick</a>，引入fastclick库，再把所有touch换成click，目前用的挺好。不过有资料表明这个插件也有bug，在Android4.2的浏览器中会响应两次点击；  </li>
+<li>使用延迟约350ms，结合pointer-events:none，不过这样也会存在问题，当点击上层元素后，下层元素在350ms内点击都无效。     <code>注意：pointer-events:none最好只在一个元素上设置，如果其子元素值为auto，则该元素任然能响应鼠标事件</code></li>
+</ol>
+<p>###总结<br>其实，每种方法各有优缺点，就拿方案1说吧，如果页面中的a标签很多，需要链接到多个页面，这样修改起来不免麻烦，所以，选择哪种方案，还需要根据实际情况考虑。</p>
+<p>说了这么多，怎么没说PC端呢，嘿嘿，因为PC不支持touch事件呀！</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/22/pageQuickDownload/" rel="next" title="优化页面加载速度">
+                <i class="fa fa-chevron-left"></i> 优化页面加载速度
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -376,6 +420,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -395,8 +443,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/header.jpg"
@@ -449,6 +506,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#移动页面点击穿透"><span class="nav-number">1.</span> <span class="nav-text">移动页面点击穿透</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -561,11 +634,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
